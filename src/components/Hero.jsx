@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-
+import cvFile from "../assets/cv.pdf";
 export default function Hero() {
 
   /* ================= ROLES ================= */
@@ -87,7 +87,7 @@ export default function Hero() {
 
         {/* Download CV */}
         <a
-          href="/cv.pdf"
+          href={cvFile}
           download
           className="
             px-6 sm:px-8 py-2.5 sm:py-3

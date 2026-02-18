@@ -498,16 +498,16 @@ export default function Contact() {
                       letterSpacing: "-0.6px", margin: "0 0 5px 0",
                     }}>Send a message</h2>
                     <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "12px", margin: 0 }}>
-                      Isi form ini, lalu akan membuka Gmail otomatis.
+                      Fill this form and it will be directed to Gmail
                     </p>
                   </div>
 
                   <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "22px" }}>
-                    <AppleInput label="Nama Kamu" value={form.name} placeholder="contoh: Budi Santoso"
+                    <AppleInput label="Nama Kamu" value={form.name} placeholder="example: Aldo Hartanto"
                       onChange={(e) => setForm({ ...form, name: e.target.value })} />
-                    <AppleInput label="Email Kamu" type="email" value={form.email} placeholder="contoh: budi@email.com"
+                    <AppleInput label="Email Kamu" type="email" value={form.email} placeholder="example: aldo@gmail.com"
                       onChange={(e) => setForm({ ...form, email: e.target.value })} />
-                    <AppleInput label="Pesan" multiline value={form.message} placeholder="Ceritain proyekmu..."
+                    <AppleInput label="Pesan" multiline value={form.message} placeholder="Write Down Your Message..."
                       onChange={(e) => setForm({ ...form, message: e.target.value })} />
                   </div>
 
